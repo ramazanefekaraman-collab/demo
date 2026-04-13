@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shop | Forside</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="top">NIKE</div>
+
+<div id="menu">
+    <a href="index.html">Forside</a>
+    <a href="produkter.html">Produkter</a>
+    <a href="om.html">Om os</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="admin.html" style="background:#500; padding:0 8px;">Admin</a>
+</div>
+
+<div id="indhold">
+    <h2>Velkommen til Nike Shop</h2>
+    <p>Køb de nyeste sneakers og sportstøj – kun hos os.</p>
+    <div style="margin-top: 40px;">
+        <a href="produkter.html" class="btn" style="background: red; padding: 12px 28px;">Se alle produkter →</a>
+    </div>
+</div>
+
+<div id="cart-sidebar">
+    <h3>🛒 MIN KURV</h3>
+    <div id="cart-items"></div>
+    <div class="cart-total">Total: <span id="cart-total-price">0 kr</span></div>
+    <button id="clear-cart-btn" class="btn-small">Tøm kurv</button>
+    <a href="checkout.html" id="checkout-link" class="btn-small" style="display:block; text-align:center; margin-top:10px; background:red;">Gå til kassen</a>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

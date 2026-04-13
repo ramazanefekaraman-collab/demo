@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shop | Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="top">ADMIN PANEL</div>
+
+<div id="menu">
+    <a href="index.html">Forside</a>
+    <a href="produkter.html">Produkter</a>
+    <a href="om.html">Om os</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="admin.html">Admin</a>
+</div>
+
+<div id="indhold">
+    <h2>📦 Lagerstyring</h2>
+    <div id="admin-products"></div>
+    
+    <h2>📋 Modtagne ordrer</h2>
+    <div id="admin-orders"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        renderAdminProducts();
+        renderAdminOrders();
+    });
+</script>
+</body>
+</html>

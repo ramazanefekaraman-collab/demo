@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shop | Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="top">KASSE</div>
+
+<div id="menu">
+    <a href="index.html">Forside</a>
+    <a href="produkter.html">Produkter</a>
+    <a href="om.html">Om os</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="admin.html">Admin</a>
+</div>
+
+<div id="indhold" class="checkout-container">
+    <h2>Gennemfør køb</h2>
+    <div id="checkout-cart"></div>
+    <form id="checkout-form">
+        <h3>Leveringsoplysninger</h3>
+        <input type="text" id="fullname" placeholder="Fulde navn" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="address" placeholder="Adresse" required>
+        <input type="text" id="city" placeholder="By" required>
+        <input type="text" id="zip" placeholder="Postnr" required>
+        <button type="submit" id="place-order-btn" class="btn" style="background: red; width:100%;">Bekræft køb</button>
+    </form>
+    <div id="order-message"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        renderCheckoutCart();
+        document.getElementById('checkout-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            placeOrder();
+        });
+        updateCartUI(); // til kurv-sidebar (valgfri)
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shop | Produkter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="top">NIKE PRODUKTER</div>
+
+<div id="menu">
+    <a href="index.html">Forside</a>
+    <a href="produkter.html">Produkter</a>
+    <a href="om.html">Om os</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="admin.html">Admin</a>
+</div>
+
+<div id="indhold">
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Søg efter vare...">
+        <button id="search-btn">🔍 Søg</button>
+    </div>
+    <div id="product-grid" class="product-grid"></div>
+</div>
+
+<div id="cart-sidebar">
+    <h3>🛒 MIN KURV</h3>
+    <div id="cart-items"></div>
+    <div class="cart-total">Total: <span id="cart-total-price">0 kr</span></div>
+    <button id="clear-cart-btn" class="btn-small">Tøm kurv</button>
+    <a href="checkout.html" id="checkout-link" class="btn-small" style="display:block; text-align:center; margin-top:10px; background:red;">Gå til kassen</a>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        renderProductGrid(getProducts());
+        setupSearch();
+        updateCartUI();
+    });
+</script>
+</body>
+</html>

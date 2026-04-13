@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shop | Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="top">KONTAKT OS</div>
+
+<div id="menu">
+    <a href="index.html">Forside</a>
+    <a href="produkter.html">Produkter</a>
+    <a href="om.html">Om os</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="admin.html">Admin</a>
+</div>
+
+<div id="indhold">
+    <h2>Kontaktinformation</h2>
+    <p>📞 Telefon: +45 12 34 56 78</p>
+    <p>✉️ Email: support@nikeshop.dk</p>
+    <p>📍 Adresse: Sneaker Street 99, 1700 København</p>
+    
+    <form id="contact-form">
+        <input type="text" placeholder="Dit navn" required>
+        <input type="email" placeholder="Din email" required>
+        <textarea placeholder="Besked..."></textarea>
+        <input type="submit" value="Send besked" class="btn">
+    </form>
+</div>
+
+<div id="cart-sidebar">
+    <h3>🛒 MIN KURV</h3>
+    <div id="cart-items"></div>
+    <div class="cart-total">Total: <span id="cart-total-price">0 kr</span></div>
+    <button id="clear-cart-btn" class="btn-small">Tøm kurv</button>
+    <a href="checkout.html" id="checkout-link" class="btn-small" style="display:block; text-align:center; margin-top:10px; background:red;">Gå til kassen</a>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
